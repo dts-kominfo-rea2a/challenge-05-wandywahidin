@@ -9,11 +9,12 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 const sorter = (list, callback) => {
   const sortList = callback(list);
 
+  let data =[]
   for (let index = 0; index < sortList.length; index++) {
-    sortList[index] = `${index + 1}. ${sortList[index]}`;
+    data.push(index +1 + '.' + sortList[index])
   }
 
-  return sortList;
+  return data;
 }
 
 // TODO: Fungsi untuk mengurutkan array of string secara ascending
