@@ -11,7 +11,7 @@ const sorter = (list, callback) => {
 
   let data =[]
   for (let index = 0; index < sortList.length; index++) {
-    data.push(index +1 + '.' + sortList[index])
+    data.push(index +1 + '. ' + sortList[index])
   }
 
   return data;
@@ -24,6 +24,8 @@ const sortAscending = list => list.sort();
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
 const sortDescending = list => list.sort().reverse();
+
+
 
 // ! JANGAN DIMODIFIKASI
 (function main() {
